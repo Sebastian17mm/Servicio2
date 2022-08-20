@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import Optional
 
-class UserInfoModel(BaseModel):
-    idUsuario: Optional[str] = ''
+class AuthUsersModel(BaseModel):
+    encryptedToken: Optional[str] = ''
     internalId:  Optional[str] = ''

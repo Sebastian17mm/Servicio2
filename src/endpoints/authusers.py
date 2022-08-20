@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from fastapi import Query
 from fastapi import FastAPI, Response, status,HTTPException
-from models.authusers import AuthUsersModel
+from src.models.authusers import AuthUsersModel
 from typing import Optional
 import requests
 import json

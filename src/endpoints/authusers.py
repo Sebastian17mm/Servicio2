@@ -40,8 +40,8 @@ async def read_user(internalId: str):
 @router.post("/add")
 async def add_user(user: AuthUsersModel):
     url = 'https://6300e2389a1035c7f8f9e8d4.mockapi.io/authUsers/authUsers/'
-    params = {'AuthUsersModel':user}
-    response = requests.post(url, params = params, timeout=5)
+    data=json.loads(user.json())
+    response = requests.post(url, data = data, timeout=5)
     jsonresponse = json.loads(response.text)
     return jsonresponse
 

@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "c47785f3-ea79-4a49-a98c-e034c1c4acc9",
+		"name": "Servicio2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1520964"
+	},
+	"item": [
+		{
+			"name": "Get By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/authUsers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"authUsers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Id Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://servicio2.herokuapp.com/authUsers/1",
+					"protocol": "https",
+					"host": [
+						"servicio2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"authUsers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post By Json",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedToken\": \"encryptedToken 800\",\r\n    \"internalId\": \"89\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/authUsers/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"authUsers",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post By Json Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedToken\": \"encryptedToken 87\",\r\n    \"internalId\": \"89\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://servicio2.herokuapp.com/authUsers/add",
+					"protocol": "https",
+					"host": [
+						"servicio2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"authUsers",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedToken\": \"encryptedToken 699\",\r\n    \"internalId\": \"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/authUsers/update/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"authUsers",
+						"update",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put By Id Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedToken\": \"encryptedToken 699\",\r\n    \"internalId\": \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://servicio2.herokuapp.com/authUsers/update/4",
+					"protocol": "https",
+					"host": [
+						"servicio2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"authUsers",
+						"update",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedToken\": \"encryptedToken 699\",\r\n    \"internalId\": \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/authUsers/delete/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"authUsers",
+						"delete",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedToken\": \"encryptedToken 699\",\r\n    \"internalId\": \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://servicio2.herokuapp.com/authUsers/delete/5",
+					"protocol": "https",
+					"host": [
+						"servicio2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"authUsers",
+						"delete",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -25,6 +25,9 @@ async def read_root():
     url = 'https://6300e2389a1035c7f8f9e8d4.mockapi.io/authUsers/authUsers'
     response = requests.get(url, {}, timeout=5)
     logger.info("Hola logger usuarios token")
+    logger.info("Hola logger info")
+    logger.warning("Hola logger Warn")
+    logger.error("Hola logger Error")
     return {"usuarios": response.json() }
 
 @router.get("/{internalId}")
